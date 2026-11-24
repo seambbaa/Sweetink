@@ -1399,42 +1399,4 @@
   </script>
 </body>
 </html>
-        // Footer Instagram Copy Buttons & Home Guide Modal
-        const btnCopyIgTattoo = document.getElementById('btn-copy-ig-tattoo');
-        const btnCopyIgSpmu = document.getElementById('btn-copy-ig-spmu');
-        const btnHomeGuide = document.getElementById('btn-home-guide');
-
-        if (btnCopyIgTattoo) {
-          btnCopyIgTattoo.addEventListener('click', () => {
-            copyTextToClipboard('@bakey.tattoo', '타투 계정(@bakey.tattoo)이 복사되었습니다');
-          });
-        }
-        if (btnCopyIgSpmu) {
-          btnCopyIgSpmu.addEventListener('click', () => {
-            copyTextToClipboard('@sweet.ink.sweet', '반영구 계정(@sweet.ink.sweet)이 복사되었습니다');
-          });
-        }
-        if (btnHomeGuide) {
-          btnHomeGuide.addEventListener('click', () => openModal('home-guide-modal'));
-        }
-
-        // Modal Close Triggers
-        document.querySelectorAll('[data-close-modal]').forEach(btn => {
-          btn.addEventListener('click', () => {
-            closeModal(btn.getAttribute('data-close-modal'));
-          });
-        });
-
-        const homeModalEl = document.getElementById('home-guide-modal');
-        if (homeModalEl) {
-          homeModalEl.addEventListener('click', (e) => {
-            if (e.target === homeModalEl) closeModal('home-guide-modal');
-          });
-        }
-      } catch (err) {
-        console.error('SWEET INK Guide initialization error:', err);
-      }
-    });
-  </script>
-</body>
-</html>
+    

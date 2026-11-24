@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>스위트잉크 (SWEET INK) | 시술 전·후 주의사항 안내</title>
+
+  <!-- Mobile Home Screen (PWA-like) Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="스위트잉크" />
+  <meta name="theme-color" content="#FAF8F5" />
+
+  <!-- Open Graph Meta Tags (KakaoTalk / Instagram / Naver Link Preview) -->
+  <meta property="og:title" content="스위트잉크 (SWEET INK) 시술 전·후 주의사항" />
+  <meta property="og:description" content="타투 · 입술 반영구 · 눈썹 반영구 방문 전 준비사항 및 시술 후 관리 안내" />
+  <meta property="og:type" content="website" />
+
+  <!-- Custom 'SI' Monogram App Icon & Favicon (Inline SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%23C5A598'/%3E%3Crect x='12' y='12' width='156' height='156' rx='30' fill='none' stroke='%23FAF8F5' stroke-opacity='0.45' stroke-width='2'/%3E%3Ctext x='90' y='112' text-anchor='middle' font-family='Georgia, serif' font-size='74' font-weight='500' letter-spacing='4' fill='%23FAF8F5'%3ESI%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%23C5A598'/%3E%3Crect x='12' y='12' width='156' height='156' rx='30' fill='none' stroke='%23FAF8F5' stroke-opacity='0.45' stroke-width='2'/%3E%3Ctext x='90' y='112' text-anchor='middle' font-family='Georgia, serif' font-size='74' font-weight='500' letter-spacing='4' fill='%23FAF8F5'%3ESI%3C/text%3E%3C/svg%3E" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Pretendard & Editorial Serif Fonts -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Custom Theme Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F5',
+            canvas: '#F2EFE9',
+            charcoal: '#2C2A29',
+            taupe: '#857B72',
+            rosebeige: '#C5A598',
+            rosebeigeDark: '#B58E7E',
+            rosebeigeSoft: '#F6EFEA',
+            hairline: '#EAE4DC',
+          },
+          fontFamily: {
+            sans: ['Pretendard', '"Noto Sans KR"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            card: '0 2px 14px -4px rgba(44, 42, 41, 0.05)',
+            soft: '0 10px 28px -8px rgba(44, 42, 41, 0.09)',
+            dock: '0 8px 24px -4px rgba(44, 42, 41, 0.16)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Smooth scrolling and mobile tap highlight removal */
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      color: #2C2A29;
+      background-color: #F2EFE9;
+      word-break: keep-all;
+    }
+
+    /* Subtle entrance animation for tab switches and modals */
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeSlideUp 0.26s ease-out forwards;
+    }
+
+    /* Smooth accordion open/close transition */
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.26s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .accordion-item[data-open="true"] .accordion-content {
+      grid-template-rows: 1fr;
+    }
+
+    .accordion-inner {
+      overflow: hidden;
+    }
+
+    .accordion-chevron {
+      transition: transform 0.24s ease;
+    }
+
+    .accordion-item[data-open="true"] .accordion-chevron {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-rosebeigeSoft selection:text-charcoal">
+
+  <!-- Main Mobile-First Single-Column Container (max-width: 480px) -->
+  <div id="top" class="w-full max-w-[480px] mx-auto min-h-screen bg-ivory sm:my-6 sm:rounded-[28px] sm:shadow-soft sm:border sm:border-hairline overflow-x-clip flex flex-col relative">
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER SECTION                          -->
+    <!-- ========================================== -->
+    <header class="relative px-6 pt-12 pb-7 text-center bg-ivory">
+      <!-- Subtle Top-Right '링크 공유' Button -->
+      <button
+        type="button"
+        id="btn-header-share"
+        aria-label="페이지 링크 공유하기"
+        class="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 border border-hairline text-[11.5px] font-medium text-charcoal/85 hover:border-rosebeige hover:text-charcoal active:scale-[0.97] transition-all shadow-sm"
+      >
+        <svg class="w-3.5 h-3.5 text-rosebeigeDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <span>링크 공유</span>
+      </button>
+
+      <!-- Location Badge -->
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-hairline text-[11px] font-medium tracking-wide text-taupe mb-4 shadow-sm">
+        <span class="w-1.5 h-1.5 rounded-full bg-rosebeige"></span>
+        <span>용인 수지구청역 프라이빗 스튜디오</span>
+      </div>
+
+      <!-- Brand Title -->
+      <h1 class="font-serif text-[34px] leading-none tracking-[0.14em] font-medium text-charcoal">
+        SWEET INK
+      </h1>
+      <p class="mt-2 text-xs tracking-[0.22em] text-taupe font-medium">
+        스위트잉크
+      </p>
+
+      <!-- Minimal Divider -->
+      <div class="w-8 h-[1px] bg-rosebeige/70 mx-auto my-5"></div>
+
+      <!-- Page Subtitle -->
+      <h2 class="text-[17px] font-semibold text-charcoal tracking-tight">
+        시술 전·후 주의사항 안내
+      </h2>
+
+      <!-- Warm Welcoming Copy -->
+      <p class="mt-2.5 text-[13px] leading-[1.7] text-taupe max-w-[340px] mx-auto">
+        아름다운 발색과 안전한 회복을 위해<br />
+        방문 전과 시술 후 안내사항을 꼭 확인해 주세요.<br />
+        세심한 관리가 만족스러운 결과로 이어집니다.
+      </p>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 2. STICKY CATEGORY TABS & SUB-FILTERS      -->
+    <!-- ========================================== -->
+    <nav aria-label="시술 카테고리 선택" class="sticky top-0 z-30 bg-ivory/95 backdrop-blur-md border-y border-hairline px-4 py-2.5">
+      <!-- Category Tabs -->
+      <div class="grid grid-cols-3 gap-1.5 bg-[#EFEAE2] p-1 rounded-2xl" role="tablist">
+        <button
+          id="tab-tattoo"
+          role="tab"
+          aria-selected="true"
+          data-category="tattoo"
+          class="tab-btn py-2.5 px-2 rounded-xl text-[13px] font-semibold transition-all duration-200 flex flex-col items-center justify-center leading-tight bg-white text-charcoal shadow-sm"
+        >
+          <span>타투</span>
+          <span class="text-[10px] font-normal text-taupe mt-0.5">감성·미니타투</span>
+        </button>
+
+        <button
+          id="tab-lip"
+          role="tab"
+          aria-selected="false"
+          data-category="lip"
+          class="tab-btn py-2.5 px-2 rounded-xl text-[13px] font-medium transition-all duration-200 flex flex-col items-center justify-center leading-tight text-taupe hover:text-charcoal"
+        >
+          <span>입술 반영구</span>
+          <span class="text-[10px] font-normal opacity-80 mt-0.5">립 틴트·커버</span>
+        </button>
+
+        <button
+          id="tab-brow"
+          role="tab"
+          aria-selected="false"
+          data-category="brow"
+          class="tab-btn py-2.5 px-2 rounded-xl text-[13px] font-medium transition-all duration-200 flex flex-col items-center justify-center leading-tight text-taupe hover:text-charcoal"
+        >
+          <span>눈썹 반영구</span>
+          <span class="text-[10px] font-normal opacity-80 mt-0.5">자연결·콤보</span>
+        </button>
+      </div>
+
+      <!-- Sub-Filter Pills -->
+      <div class="flex items-center justify-center gap-2 mt-2.5">
+        <button
+          type="button"
+          data-filter="all"
+          class="filter-btn px-3.5 py-1.5 rounded-full text-[12px] font-medium transition-colors bg-charcoal text-white"
+        >
+          전체 보기
+        </button>
+        <button
+          type="button"
+          data-filter="pre"
+          class="filter-btn px-3.5 py-1.5 rounded-full text-[12px] font-medium transition-colors bg-white text-taupe border border-hairline hover:border-rosebeige"
+        >
+          시술 전 준비
+        </button>
+        <button
+          type="button"
+          data-filter="post"
+          class="filter-btn px-3.5 py-1.5 rounded-full text-[12px] font-medium transition-colors bg-white text-taupe border border-hairline hover:border-rosebeige"
+        >
+          시술 후 관리
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- 3. DYNAMIC MAIN CONTENT AREA               -->
+    <!-- ========================================== -->
+    <main id="content-root" class="flex-1 px-5 py-7 space-y-9">
+      <!-- Dynamically rendered per active category & filter -->
+    </main>
+
+    <!-- ========================================== -->
+    <!-- 4. STUDIO FOOTER SECTION                   -->
+    <!-- ========================================== -->
+    <footer class="mt-auto bg-white border-t border-hairline px-5 pt-9 pb-24">
+      <div class="text-center">
+        <p class="font-serif text-xl tracking-[0.14em] text-charcoal font-medium">SWEET INK</p>
+        <p class="text-[12.5px] text-taupe mt-1">
+          스위트잉크 · 용인 수지구청역 인근
+        </p>
+
+        <!-- Primary Studio Action Buttons -->
+        <div class="mt-6 grid grid-cols-1 gap-2.5">
+          <!-- Instagram Copy Button -->
+          <button
+            type="button"
+            id="btn-copy-instagram"
+            class="w-full py-3.5 px-4 rounded-2xl border border-hairline bg-ivory hover:bg-rosebeigeSoft/70 active:scale-[0.99] transition-all flex items-center justify-center gap-2 text-[13.5px] font-medium text-charcoal"
+          >
+            <svg class="w-4 h-4 text-rosebeigeDark shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+            <span>인스타그램 @bakie_tattoo 아이디 복사</span>
+          </button>
+
+          <!-- KakaoTalk Inquiry Placeholder Button -->
+          <button
+            type="button"
+            id="btn-kakao-inquiry"
+            class="w-full py-3.5 px-4 rounded-2xl bg-charcoal hover:bg-[#3E3B39] active:scale-[0.99] transition-all flex items-center justify-center gap-2 text-[13.5px] font-medium text-white shadow-sm"
+          >
+            <svg class="w-4 h-4 text-rosebeige shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>카카오톡 예약 · 관리 문의</span>
+          </button>
+
+          <!-- Add to Home Screen Guide Button -->
+          <button
+            type="button"
+            id="btn-home-guide"
+            class="w-full py-3 px-4 rounded-2xl border border-rosebeige/50 bg-rosebeigeSoft/60 hover:bg-rosebeigeSoft active:scale-[0.99] transition-all flex items-center justify-center gap-2 text-[13px] font-medium text-charcoal"
+          >
+            <svg class="w-4 h-4 text-rosebeigeDark shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              <line x1="12" y1="8" x2="12" y2="14"></line>
+              <line x1="9" y1="11" x2="15" y2="11"></line>
+            </svg>
+            <span>홈 화면에 바로가기 추가 방법</span>
+          </button>
+        </div>
+
+        <!-- Grounded Disclaimer -->
+        <div class="mt-6 text-left bg-ivory/80 border border-hairline/70 rounded-2xl p-4">
+          <p class="text-[11.5px] leading-[1.7] text-taupe">
+            <span class="font-semibold text-charcoal/85">안내사항</span><br />
+            개인의 피부 타입과 컨디션에 따라 회복 속도와 발색에 차이가 있을 수 있습니다. 시술 후 이상 증상이 나타나거나 관리 중 궁금한 점이 있으시면 언제든 편하게 문의해 주세요.
+          </p>
+        </div>
+
+        <p class="mt-6 text-[11px] text-taupe/70 tracking-wider">
+          © SWEET INK. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 5. FLOATING QUICK ACTION DOCK (BOTTOM-RIGHT) -->
+  <!-- ========================================== -->
+  <div
+    aria-label="빠른 실행 버튼"
+    class="fixed bottom-5 right-4 z-40 flex items-center gap-2"
+  >
+    <!-- Copy / Share Link Button -->
+    <button
+      type="button"
+      id="btn-dock-copy"
+      aria-label="링크 복사"
+      class="h-11 px-3.5 rounded-full bg-white/95 backdrop-blur-md border border-hairline text-charcoal shadow-dock hover:border-rosebeige active:scale-95 transition-all flex items-center gap-1.5 text-[12.5px] font-medium"
+    >
+      <svg class="w-4 h-4 text-rosebeigeDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+      <span>링크 복사</span>
+    </button>
+
+    <!-- Home (Scroll to Top) Button -->
+    <button
+      type="button"
+      id="btn-dock-home"
+      aria-label="홈 맨 위로 이동"
+      class="h-11 px-3.5 rounded-full bg-charcoal text-white shadow-dock hover:bg-[#3E3B39] active:scale-95 transition-all flex items-center gap-1.5 text-[12.5px] font-medium"
+    >
+      <svg class="w-4 h-4 text-rosebeige" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>홈</span>
+    </button>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 6. MODAL: ADD TO HOME SCREEN GUIDE         -->
+  <!-- ========================================== -->
+  <div
+    id="home-guide-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-charcoal/45 backdrop-blur-[2px] p-5"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="home-guide-title"
+  >
+    <div class="w-full max-w-[380px] bg-white rounded-3xl p-6 shadow-xl border border-hairline animate-fade-in">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-rosebeigeSoft text-rosebeigeDark tracking-wide">
+          HOME SHORTCUT
+        </span>
+        <button
+          type="button"
+          data-close-modal="home-guide-modal"
+          aria-label="닫기"
+          class="p-1.5 rounded-full text-taupe hover:bg-ivory hover:text-charcoal transition-colors"
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <h3 id="home-guide-title" class="text-[17px] font-semibold text-charcoal">
+        홈 화면에 바로가기 추가 방법
+      </h3>
+      <p class="mt-1.5 text-[12.5px] leading-[1.6] text-taupe">
+        스마트폰 홈 화면에 추가해 두시면 앱처럼 터치 한 번으로 주의사항을 다시 확인하실 수 있습니다.
+      </p>
+
+      <!-- iOS & Android Instructions -->
+      <div class="mt-4 space-y-3">
+        <!-- iOS Safari -->
+        <div class="p-3.5 rounded-2xl bg-ivory border border-hairline">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-charcoal text-white">iOS</span>
+            <span class="text-[13px] font-semibold text-charcoal">아이폰 (Safari 브라우저)</span>
+          </div>
+          <ol class="text-[12.5px] leading-[1.65] text-taupe space-y-1 list-decimal list-inside">
+            <li>화면 하단의 <strong class="text-charcoal font-medium">공유 버튼 (□↑)</strong>을 눌러주세요.</li>
+            <li>메뉴를 아래로 내려 <strong class="text-charcoal font-medium">‘홈 화면에 추가’</strong>를 선택하세요.</li>
+            <li>우측 상단의 <strong class="text-charcoal font-medium">‘추가’</strong>를 누르면 완료됩니다.</li>
+          </ol>
+        </div>
+
+        <!-- Android Chrome -->
+        <div class="p-3.5 rounded-2xl bg-ivory border border-hairline">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-rosebeigeDark text-white">Android</span>
+            <span class="text-[13px] font-semibold text-charcoal">안드로이드 (Chrome 브라우저)</span>
+          </div>
+          <ol class="text-[12.5px] leading-[1.65] text-taupe space-y-1 list-decimal list-inside">
+            <li>우측 상단의 <strong class="text-charcoal font-medium">더보기 버튼 (⋮)</strong>을 눌러주세요.</li>
+            <li>메뉴에서 <strong class="text-charcoal font-medium">‘홈 화면에 추가’</strong>를 선택하세요.</li>
+            <li><strong class="text-charcoal font-medium">‘추가’</strong>를 누르면 홈 화면에 아이콘이 생성됩니다.</li>
+          </ol>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        data-close-modal="home-guide-modal"
+        class="mt-5 w-full py-3 rounded-2xl bg-charcoal text-white text-[13.5px] font-medium hover:bg-[#3E3B39] transition-colors"
+      >
+        확인했습니다
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 7. MODAL: KAKAOTALK INQUIRY PLACEHOLDER    -->
+  <!-- ========================================== -->
+  <div
+    id="kakao-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-charcoal/45 backdrop-blur-[2px] p-5"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="kakao-modal-title"
+  >
+    <div class="w-full max-w-[350px] bg-white rounded-3xl p-6 shadow-xl border border-hairline animate-fade-in">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-rosebeigeSoft text-rosebeigeDark tracking-wide">
+          KAKAOTALK
+        </span>
+        <button
+          type="button"
+          data-close-modal="kakao-modal"
+          aria-label="닫기"
+          class="p-1.5 rounded-full text-taupe hover:bg-ivory hover:text-charcoal transition-colors"
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <h3 id="kakao-modal-title" class="text-[16px] font-semibold text-charcoal">
+        카카오톡 예약 · 관리 문의
+      </h3>
+      <p class="mt-2 text-[13px] leading-[1.68] text-taupe">
+        시술 후 관리 중 궁금한 점이나 리터치·예약 문의는 스위트잉크 카카오톡 채널로 편하게 남겨주세요.<br />
+        <span class="text-[11.5px] text-rosebeigeDark block mt-2">
+          * 실제 운영 시 이 버튼에 카카오톡 채널 URL을 연결하시면 바로 채팅창으로 이동합니다.
+        </span>
+      </p>
+
+      <div class="mt-5 flex flex-col gap-2">
+        <button
+          type="button"
+          data-close-modal="kakao-modal"
+          class="w-full py-3 rounded-2xl bg-charcoal text-white text-[13.5px] font-medium hover:bg-[#3E3B39] transition-colors"
+        >
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 8. SUBTLE FLOATING TOAST NOTIFICATION      -->
+  <!-- ========================================== -->
+  <div
+    id="toast"
+    role="status"
+    aria-live="polite"
+    class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-2 transition-all duration-300"
+  >
+    <div class="px-4 py-2.5 rounded-full bg-charcoal/95 text-white text-[12.5px] font-medium shadow-lg whitespace-nowrap flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-rosebeige"></span>
+      <span id="toast-message">링크가 복사되었습니다</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 9. APPLICATION DATA & INTERACTIVE SCRIPT   -->
+  <!-- ========================================== -->
+  <script>
+    /**
+     * Minimalist Inline SVG Icons (1.6px clean strokes)
+     */
+    const ICONS = {
+      shield: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+      droplet: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`,
+      sparkles: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>`,
+      hand: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>`,
+      ban: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>`,
+      sun: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`,
+      utensils: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>`,
+      feather: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" x2="2" y1="8" y2="22"/><line x1="17.5" x2="15" y1="15" y2="15"/></svg>`,
+      flame: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`,
+      brush: `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg>`,
+    };
+
+    /**
+     * Care Guide Content Data for Tattoo, Lip SPMU, Eyebrow SPMU
+     */
+    const CARE_DATA = {
+      tattoo: {
+        label: '타투 (감성·미니타투)',
+        intro: '섬세한 라인과 선명한 발색이 오래 유지될 수 있도록 방문 전 피부 컨디션과 시술 후 보습 관리에 신경 써 주세요.',
+        preCare: [
+          {
+            id: 't-pre-1',
+            title: '시술 전날 과음 자제 및 충분한 수면',
+            desc: '음주와 수면 부족은 피부 예민도와 통증을 높이고 출혈을 유발할 수 있습니다.'
+          },
+          {
+            id: 't-pre-2',
+            title: '시술 부위 보습 (과도한 각질 제거 금지)',
+            desc: '촉촉한 피부 상태가 잉크 착색에 좋습니다. 시술 전날 스크럽이나 제모로 자극을 주지 마세요.'
+          },
+          {
+            id: 't-pre-3',
+            title: '편하고 어두운 계열의 복장 권장',
+            desc: '시술 부위가 편하게 노출되는 넉넉한 옷을 추천하며, 잉크 묻음을 방지하기 위해 어두운 옷이 좋습니다.'
+          },
+          {
+            id: 't-pre-4',
+            title: '시술 불가 대상 사전 확인',
+            desc: '임신·수유 중이거나 켈로이드성 피부, 시술 부위 피부 질환이 있는 경우 반드시 사전에 문의해 주세요.'
+          }
+        ],
+        postCare: [
+          {
+            icon: 'shield',
+            tag: '당일 관리',
+            title: '랩 / 방수필름 제거 안내',
+            desc: '일반 랩은 시술 후 2~3시간 뒤 제거하고 미온수로 가볍게 씻어주세요. 방수필름을 부착한 경우 안내받은 기간(보통 2~3일) 유지 후 샤워 시 물과 함께 천천히 떼어내 주세요.'
+          },
+          {
+            icon: 'droplet',
+            tag: '2주 이상 금지',
+            title: '미온수 가벼운 샤워만 가능',
+            desc: '흐르는 미온수로 가볍게 씻고 깨끗한 키친타월로 톡톡 두드려 물기를 제거해 주세요. 때밀이, 탕목욕, 수영장, 사우나는 최소 2주 이상 피해주세요.'
+          },
+          {
+            icon: 'sparkles',
+            tag: '보습 관리',
+            title: '재생크림 / 비판텐 얇게 도포',
+            desc: '시술 부위가 건조해지지 않도록 하루 2~3회 소량을 얇게 펴 발라주세요. 너무 두껍게 바르면 모공이 막혀 트러블이 생길 수 있습니다.'
+          },
+          {
+            icon: 'hand',
+            tag: '절대 주의',
+            title: '딱지·각질 절대 뜯지 않기',
+            desc: '회복 중 자연스럽게 생기는 각질이나 딱지를 억지로 뜯으면 잉크가 함께 빠져 발색이 고르지 못하게 됩니다. 간지러울 때는 가볍게 톡톡 두드려 주세요.'
+          },
+          {
+            icon: 'ban',
+            tag: '1~2주 자제',
+            title: '음주 및 격한 운동(땀 배출) 자제',
+            desc: '음주는 염증을 유발할 수 있으며, 과도한 땀과 열기는 회복을 더디게 합니다. 최소 1~2주간은 과음과 격한 운동을 피해 주세요.'
+          },
+          {
+            icon: 'sun',
+            tag: '자외선·마찰',
+            title: '직사광선 및 의류 마찰 주의',
+            desc: '완전 회복 전까지 강한 직사광선과 태닝을 피하고, 시술 부위를 꽉 조이는 옷이나 악세사리 마찰에 주의해 주세요.'
+          }
+        ],
+        timeline: [
+          {
+            period: '당일 ~ 2일차',
+            stage: '초기 진정기',
+            desc: '약간의 붓기, 붉은기, 열감 및 진물이 나올 수 있습니다. 청결 유지와 가벼운 세정이 중요합니다.'
+          },
+          {
+            period: '3 ~ 7일차',
+            stage: '각질 탈각기',
+            desc: '표면이 건조해지며 얇은 각질이 올라오고 간지러울 수 있습니다. 절대 긁거나 뜯지 말고 보습제를 얇게 발라주세요.'
+          },
+          {
+            period: '2 ~ 3주차',
+            stage: '피부 안정기',
+            desc: '각질이 모두 탈락하고 피부가 매끈해집니다. 겉피부가 재생되며 일시적으로 색이 살짝 흐려 보일 수 있습니다.'
+          },
+          {
+            period: '4 ~ 8주차',
+            stage: '최종 발색 · 리터치 시기',
+            desc: '피부 속까지 완전히 회복되어 본연의 색감이 올라옵니다. 보완이 필요한 경우 이 시기에 리터치를 진행합니다.'
+          }
+        ],
+        faq: [
+          {
+            q: '시술 당일 샤워해도 괜찮나요?',
+            a: '네, 당일 가벼운 미온수 샤워는 가능합니다. 다만 시술 부위에 바디워시나 비누가 직접 닿지 않도록 주의하시고, 샤워 후 깨끗한 타월로 문지르지 말고 톡톡 눌러 물기를 말려주세요.'
+          },
+          {
+            q: '각질이 벗겨진 뒤 색이 연해 보이는데 정상인가요?',
+            a: '정상적인 회복 과정입니다. 각질 탈락 직후에는 새 피부가 얇게 덮여 있어 일시적으로 뿌옇거나 연해 보일 수 있으며, 4주 정도 지나 피부가 완전히 안정되면 색감이 자연스럽게 올라옵니다.'
+          },
+          {
+            q: '음주와 운동은 언제부터 가능한가요?',
+            a: '염증 예방과 깔끔한 착색을 위해 음주와 땀이 많이 나는 격한 운동(헬스, 러닝, 필라테스 등)은 최소 1주일, 부위와 크기에 따라 2주 정도 자제해 주시는 것이 좋습니다.'
+          },
+          {
+            q: '리터치 기간은 어떻게 되나요?',
+            a: '피부가 완전히 회복되는 시술 후 4주 ~ 8주 사이에 진행하시는 것이 가장 좋습니다. 탈각이 끝난 뒤 상태를 보시고 필요시 편하게 문의해 주세요.'
+          }
+        ]
+      },
+
+      lip: {
+        label: '입술 반영구',
+        intro: '입술은 점막에 가까워 건조에 민감합니다. 시술 전 충분한 보습과 시술 후 자극 최소화가 맑은 발색의 핵심입니다.',
+        preCare: [
+          {
+            id: 'l-pre-1',
+            title: '시술 3~5일 전부터 입술 보습제 충분히 바르기',
+            desc: '바세린이나 립밤을 자기 전 듬뿍 발라 입술이 촉촉하고 부드러운 상태로 방문해 주세요.'
+          },
+          {
+            id: 'l-pre-2',
+            title: '입술 각질 억지로 뜯지 않기',
+            desc: '각질을 뜯어 상처가 나면 시술 시 통증이 커지고 색소가 고르게 들어가지 않을 수 있습니다.'
+          },
+          {
+            id: 'l-pre-3',
+            title: '헤르페스(구순포진) 이력 시 예방약 사전 복용',
+            desc: '피곤할 때 입술 포진이 잘 올라오는 체질이라면 시술 전 약국이나 병원에서 아시클로버 등 예방약 복용을 권장합니다.'
+          },
+          {
+            id: 'l-pre-4',
+            title: '전날 음주 및 맵고 자극적인 음식 자제',
+            desc: '입술 붓기와 출혈을 줄이기 위해 시술 전날에는 음주와 자극적인 식사를 피해 주세요.'
+          }
+        ],
+        postCare: [
+          {
+            icon: 'utensils',
+            tag: '당일 ~ 3일차',
+            title: '맵고 짠 음식·뜨거운 국물 자제',
+            desc: '시술 직후 입술이 예민하므로 자극적인 음식과 뜨거운 국물은 피해주세요. 음료 섭취 시에는 빨대 사용을 권장합니다.'
+          },
+          {
+            icon: 'droplet',
+            tag: '청결 유지',
+            title: '식사 후 미온수로 가볍게 헹구기',
+            desc: '음식물이나 양치 거품이 입술에 남아있지 않도록 미온수로 살살 헹군 뒤, 깨끗한 티슈로 물기를 톡톡 두드려 제거해 주세요.'
+          },
+          {
+            icon: 'sparkles',
+            tag: '수시 보습',
+            title: '재생크림·바세린 수시로 얇게 도포',
+            desc: '입술이 마르거나 당기지 않도록 면봉을 사용해 재생크림이나 바세린을 수시로 얇게 덧발라 주세요.'
+          },
+          {
+            icon: 'hand',
+            tag: '절대 주의',
+            title: '각질 탈각 시 절대 뜯지 않기',
+            desc: '보통 2~4일 차에 각질이 올라옵니다. 손으로 뜯거나 이로 물어뜯으면 착색이 얼룩질 수 있으니 자연 탈락되도록 두세요.'
+          },
+          {
+            icon: 'flame',
+            tag: '1주 이상 자제',
+            title: '음주·흡연·사우나 1주 이상 자제',
+            desc: '열감과 자극은 염증 및 포진 유발의 원인이 됩니다. 최소 1주일간 음주, 흡연, 사우나, 찜질방을 피해 주세요.'
+          }
+        ],
+        timeline: [
+          {
+            period: '당일 ~ 2일차',
+            stage: '붓기 및 진한 발색기',
+            desc: '시술 직후에는 붓기가 있고 색감이 평소보다 진해 보입니다. 붓기는 보통 1~2일 내로 자연스럽게 가라앉습니다.'
+          },
+          {
+            period: '3 ~ 5일차',
+            stage: '각질 탈각기',
+            desc: '얇은 각질이 자연스럽게 벗겨지는 시기입니다. 절대 뜯지 말고 바세린으로 보습을 충분히 유지해 주세요.'
+          },
+          {
+            period: '1 ~ 3주차',
+            stage: '발색 안정기 (색 올라오는 시기)',
+            desc: '탈각 직후에는 색이 연해 보일 수 있으나, 피부 재생이 진행되면서 2~3주에 걸쳐 자연스러운 혈색으로 서서히 올라옵니다.'
+          },
+          {
+            period: '4 ~ 8주차',
+            stage: '최종 발색 · 리터치 시기',
+            desc: '최종 컬러가 안정화되는 시기입니다. 원하시는 톤에 맞춰 2차 리터치를 통해 완성도를 높일 수 있습니다.'
+          }
+        ],
+        faq: [
+          {
+            q: '탈각 후 색이 너무 연해졌는데 원래 그런가요?',
+            a: '네, 입술 반영구는 탈각 직후 1~2주 사이에는 새 피부가 덮이면서 색이 많이 연해 보일 수 있습니다. 3~4주에 걸쳐 피부 속에서 색감이 다시 은은하게 올라오니 걱정하지 마시고 보습을 잘 유지해 주세요.'
+          },
+          {
+            q: '시술 후 양치질이나 세안은 어떻게 하나요?',
+            a: '양치 시 치약 거품이 입술에 최대한 닿지 않게 주의하시고, 닿았을 경우 미온수로 가볍게 헹궈주세요. 세안 시에도 입술 부위는 폼클렌징을 피하고 물로만 살살 닦아주시는 것이 좋습니다.'
+          },
+          {
+            q: '립스틱이나 틴트는 언제부터 바를 수 있나요?',
+            a: '각질 탈각이 완전히 끝난 뒤(보통 시술 후 5~7일 이후)부터 가벼운 립 제품 사용이 가능합니다. 그전까지는 무색 바세린이나 제공해 드린 재생크림만 사용해 주세요.'
+          },
+          {
+            q: '리터치는 언제 받는 것이 좋나요?',
+            a: '입술 피부가 완전히 재생되고 최종 발색이 확인되는 시술 후 4주 ~ 8주 사이에 방문해 주시는 것이 가장 이상적입니다.'
+          }
+        ]
+      },
+
+      brow: {
+        label: '눈썹 반영구',
+        intro: '자연스러운 결과 섬세한 음영이 예쁘게 자리 잡도록, 시술 전 피부 자극을 줄이고 시술 후 건조·마찰을 피해주세요.',
+        preCare: [
+          {
+            id: 'b-pre-1',
+            title: '1주 전부터 각질 제거·필링·레티놀 중단',
+            desc: '눈썹 주변 피부가 예민해지거나 얇아져 있으면 착색력이 떨어지고 자극이 커질 수 있습니다.'
+          },
+          {
+            id: 'b-pre-2',
+            title: '과도한 눈썹 정리 자제',
+            desc: '본인의 자연스러운 눈썹 모량과 결 방향을 확인하여 디자인하기 위해 방문 전 무리한 다듬기는 피해 주세요.'
+          },
+          {
+            id: 'b-pre-3',
+            title: '시술 전날 과음 자제 및 충분한 휴식',
+            desc: '컨디션이 좋을수록 붓기가 적고 색소 정착이 안정적으로 이루어집니다.'
+          },
+          {
+            id: 'b-pre-4',
+            title: '기존 반영구 잔흔이 있는 경우 사전 사진 공유',
+            desc: '과거 시술 이력이나 붉은·푸른 잔흔이 남아 있다면 정확한 상담을 위해 미리 사진을 보내주세요.'
+          }
+        ],
+        postCare: [
+          {
+            icon: 'droplet',
+            tag: '당일 주의',
+            title: '시술 당일 물 닿지 않게 주의',
+            desc: '시술 당일은 눈썹 부위에 물이 닿지 않도록 주의해 주세요. 세안 시 눈썹을 피해 닦아내고, 폼클렌징 거품이 닿지 않게 해주세요.'
+          },
+          {
+            icon: 'flame',
+            tag: '1주일간 자제',
+            title: '사우나·찜질방·수영·격한 운동 자제',
+            desc: '열기와 땀은 모공을 열어 색소 빠짐과 염증의 원인이 됩니다. 시술 후 1주일간은 땀이 많이 나는 활동을 피해 주세요.'
+          },
+          {
+            icon: 'feather',
+            tag: '얇게 도포',
+            title: '제공된 재생크림 면봉으로 얇게 도포',
+            desc: '시술 다음 날부터 건조할 때마다 깨끗한 면봉으로 아주 얇게 톡톡 발라주세요. 과도하게 바르면 각질이 두꺼워질 수 있습니다.'
+          },
+          {
+            icon: 'hand',
+            tag: '절대 주의',
+            title: '탈각 중 간지러워도 긁거나 뜯지 않기',
+            desc: '회복 과정에서 약간의 간지러움과 미세한 각질이 생길 수 있습니다. 손으로 만지거나 뜯지 말고 자연 탈락되도록 기다려 주세요.'
+          },
+          {
+            icon: 'brush',
+            tag: '1주일간 피하기',
+            title: '눈썹 메이크업·클렌징 오일 피하기',
+            desc: '탈각이 완료되는 1주일간은 눈썹 부위의 아이브로우, 선크림, 파운데이션 및 클렌징 오일·리무버 사용을 피해 주세요.'
+          }
+        ],
+        timeline: [
+          {
+            period: '당일 ~ 2일차',
+            stage: '색감 진해짐 시기',
+            desc: '공기와 만나 색소가 산화되며 시술 직후보다 약간 진해 보일 수 있습니다. 자연스러운 과정이니 안심해 주세요.'
+          },
+          {
+            period: '3 ~ 7일차',
+            stage: '탈각 및 간지러움 시기',
+            desc: '얇은 각질이 서서히 떨어지며 부분적으로 비어 보일 수 있습니다. 절대 뜯지 말고 면봉으로 재생크림만 얇게 발라주세요.'
+          },
+          {
+            period: '2 ~ 3주차',
+            stage: '자연 발색 안정기',
+            desc: '각질이 모두 탈락하고 본래 눈썹 모와 어우러지며 한층 부드럽고 자연스러운 톤으로 자리 잡습니다.'
+          },
+          {
+            period: '4 ~ 8주차',
+            stage: '리터치 권장 시기',
+            desc: '피부 재생이 완료된 상태입니다. 탈각 후 비어 보이는 부분이나 진하기, 디자인 미세 조정을 리터치로 완성합니다.'
+          }
+        ],
+        faq: [
+          {
+            q: '세안과 머리 감기는 언제부터 가능한가요?',
+            a: '시술 당일에는 눈썹에 물이 닿지 않도록 주의해 주시고, 다음 날부터는 흐르는 물로 가볍게 세안이 가능합니다. 단, 1주일간은 눈썹 부위에 폼클렌징이나 클렌징 오일이 직접 닿지 않게 피해 주세요.'
+          },
+          {
+            q: '탈각 후 군데군데 비어 보이거나 연해졌어요.',
+            a: '피부 타입(특히 지성 피부)이나 수면 습관에 따라 1차 시술 후 부분적으로 색이 연하게 남을 수 있습니다. 2~3주 정도 지나면 색이 조금 더 올라오며, 부족한 부분은 리터치로 깔끔하게 보완해 드립니다.'
+          },
+          {
+            q: '눈썹 화장은 언제부터 할 수 있나요?',
+            a: '눈썹 부위를 제외한 피부 화장은 다음 날부터 가능하며, 눈썹 자체의 아이브로우 메이크업은 각질 탈각이 끝나는 시술 후 7일 이후부터 권장드립니다.'
+          },
+          {
+            q: '리터치 기간은 어떻게 되나요?',
+            a: '피부 표피가 완전히 재생되는 시술 후 4주 ~ 8주 사이에 방문해 주시면 가장 예쁘게 착색됩니다.'
+          }
+        ]
+      }
+    };
+
+    /**
+     * Application State
+     */
+    const state = {
+      activeCategory: 'tattoo', // 'tattoo' | 'lip' | 'brow'
+      activeFilter: 'all',      // 'all' | 'pre' | 'post'
+      checkedItems: {},
+      toastTimer: null
+    };
+
+    const STORAGE_KEY = 'sweet_ink_care_checks_v2';
+
+    /**
+     * Load & Save Checklist State (Safe for restricted iframe environments)
+     */
+    function loadSavedChecks() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === 'object') {
+            state.checkedItems = parsed;
+          }
+        }
+      } catch (e) {
+        state.checkedItems = {};
+      }
+    }
+
+    function saveChecks() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state.checkedItems));
+      } catch (e) {
+        // Silently ignore storage errors
+      }
+    }
+
+    /**
+     * Toast Notification Helper
+     */
+    function showToast(message) {
+      const toastEl = document.getElementById('toast');
+      const msgEl = document.getElementById('toast-message');
+      if (!toastEl || !msgEl) return;
+
+      msgEl.textContent = message;
+      toastEl.classList.remove('opacity-0', 'translate-y-2');
+      toastEl.classList.add('opacity-100', 'translate-y-0');
+
+      if (state.toastTimer) clearTimeout(state.toastTimer);
+      state.toastTimer = setTimeout(() => {
+        toastEl.classList.remove('opacity-100', 'translate-y-0');
+        toastEl.classList.add('opacity-0', 'translate-y-2');
+      }, 2500);
+    }
+
+    /**
+     * Reliable Clipboard Copy using execCommand (Works inside iframes & mobile webviews)
+     */
+    function copyTextToClipboard(text, successMsg) {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.top = '-9999px';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        textarea.setSelectionRange(0, text.length);
+        const copied = document.execCommand('copy');
+        document.body.removeChild(textarea);
+        if (copied) {
+          showToast(successMsg || '링크가 복사되었습니다');
+        } else {
+          showToast('복사에 실패했습니다. 주소창에서 복사해 주세요.');
+        }
+      } catch (err) {
+        showToast('복사 기능을 사용할 수 없습니다.');
+      }
+    }
+
+    /**
+     * Share via Web Share API (on mobile HTTPS) or fallback to Clipboard Copy
+     */
+    async function handleShareOrCopyLink() {
+      const currentUrl = window.location.href;
+      const isHttpUrl = /^https?:\/\//i.test(currentUrl);
+      const shareUrl = isHttpUrl ? currentUrl : 'https://sweetink.guide';
+
+      if (navigator.share && isHttpUrl) {
+        try {
+          await navigator.share({
+            title: '스위트잉크 (SWEET INK) 시술 전·후 주의사항',
+            text: '타투 · 입술 반영구 · 눈썹 반영구 시술 전후 관리 안내 페이지입니다.',
+            url: currentUrl
+          });
+          return;
+        } catch (err) {
+          // If user cancelled share dialog, do nothing; otherwise fallback to copy
+          if (err && err.name === 'AbortError') return;
+        }
+      }
+
+      copyTextToClipboard(shareUrl, '링크가 복사되었습니다');
+    }
+
+    /**
+     * Modal Open / Close Helpers
+     */
+    function openModal(modalId) {
+      const el = document.getElementById(modalId);
+      if (!el) return;
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+
+    function closeModal(modalId) {
+      const el = document.getElementById(modalId);
+      if (!el) return;
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+    }
+
+    /**
+     * Render Section 1: Interactive Pre-Care Checklist
+     */
+    function renderPreCareSection(data) {
+      const total = data.preCare.length;
+      const checkedCount = data.preCare.filter(item => !!state.checkedItems[item.id]).length;
+      const allChecked = total > 0 && checkedCount === total;
+      const progressPct = Math.round((checkedCount / total) * 100);
+
+      const itemsHtml = data.preCare.map(item => {
+        const isChecked = !!state.checkedItems[item.id];
+        return `
+          <button
+            type="button"
+            data-check-id="${item.id}"
+            aria-pressed="${isChecked}"
+            class="checklist-row w-full text-left p-4 rounded-2xl border transition-all duration-200 flex items-start gap-3.5 active:scale-[0.99] ${
+              isChecked
+                ? 'bg-rosebeigeSoft/60 border-rosebeige/55'
+                : 'bg-white border-hairline hover:border-rosebeige/60 shadow-card'
+            }"
+          >
+            <span class="mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0 transition-colors border ${
+              isChecked
+                ? 'bg-rosebeige border-rosebeige text-white'
+                : 'bg-ivory border-taupe/40 text-transparent'
+            }">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+
+            <div class="flex-1 min-w-0">
+              <p class="text-[14px] font-semibold leading-snug transition-colors ${
+                isChecked ? 'line-through text-taupe' : 'text-charcoal'
+              }">
+                ${item.title}
+              </p>
+              <p class="mt-1 text-[12.5px] leading-[1.6] text-taupe">
+                ${item.desc}
+              </p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      return `
+        <section aria-labelledby="heading-pre" class="space-y-3.5">
+          <div class="flex items-end justify-between gap-2">
+            <div>
+              <span class="text-[11px] font-semibold tracking-[0.14em] uppercase text-rosebeigeDark">
+                STEP 01 · PRE-CARE
+              </span>
+              <h3 id="heading-pre" class="text-[18px] font-semibold text-charcoal mt-0.5 tracking-tight">
+                시술 전 준비사항
+              </h3>
+            </div>
+            <span class="text-[11.5px] font-medium px-2.5 py-1 rounded-full ${
+              allChecked
+                ? 'bg-rosebeige text-white'
+                : 'bg-white border border-hairline text-taupe'
+            }">
+              방문 전 체크리스트 ${checkedCount}/${total} 완료
+            </span>
+          </div>
+
+          <!-- Live Progress Bar -->
+          <div class="w-full h-1.5 bg-[#EAE4DC] rounded-full overflow-hidden">
+            <div
+              class="h-full bg-rosebeige rounded-full transition-all duration-300"
+              style="width: ${progressPct}%"
+            ></div>
+          </div>
+
+          <p class="text-[12.5px] text-taupe">
+            항목을 터치해 체크하며 방문 전 준비를 마쳐보세요.
+          </p>
+
+          <div class="space-y-2.5">
+            ${itemsHtml}
+          </div>
+
+          ${allChecked ? `
+            <div class="p-3.5 rounded-2xl bg-rosebeigeSoft border border-rosebeige/45 flex items-center gap-2.5 animate-fade-in">
+              <span class="w-6 h-6 rounded-full bg-rosebeige text-white flex items-center justify-center shrink-0">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <p class="text-[12.5px] font-medium text-charcoal leading-snug">
+                방문 전 준비사항을 모두 확인하셨습니다. 편안한 마음으로 방문해 주세요.
+              </p>
+            </div>
+          ` : ''}
+        </section>
+      `;
+    }
+
+    /**
+     * Render Section 2: Aftercare Cards
+     */
+    function renderPostCareSection(data) {
+      const cardsHtml = data.postCare.map(item => `
+        <article class="bg-white rounded-2xl p-[18px] border border-hairline shadow-card flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-xl bg-rosebeigeSoft text-rosebeigeDark flex items-center justify-center shrink-0 mt-0.5">
+            ${ICONS[item.icon] || ICONS.sparkles}
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-1.5 mb-1">
+              <h4 class="text-[14.5px] font-semibold text-charcoal leading-snug">
+                ${item.title}
+              </h4>
+              ${item.tag ? `
+                <span class="text-[10.5px] font-medium px-2 py-0.5 rounded-full bg-ivory border border-hairline text-taupe">
+                  ${item.tag}
+                </span>
+              ` : ''}
+            </div>
+            <p class="text-[13px] leading-[1.68] text-taupe">
+              ${item.desc}
+            </p>
+          </div>
+        </article>
+      `).join('');
+
+      return `
+        <section aria-labelledby="heading-post" class="space-y-4">
+          <div>
+            <span class="text-[11px] font-semibold tracking-[0.14em] uppercase text-rosebeigeDark">
+              STEP 02 · POST-CARE
+            </span>
+            <h3 id="heading-post" class="text-[18px] font-semibold text-charcoal mt-0.5 tracking-tight">
+              시술 후 관리방법
+            </h3>
+            <p class="text-[12.5px] text-taupe mt-1">
+              초기 관리가 깔끔한 발색과 오랜 유지력을 결정합니다.
+            </p>
+          </div>
+          <div class="space-y-3">
+            ${cardsHtml}
+          </div>
+        </section>
+      `;
+    }
+
+    /**
+     * Render Section 3: Recovery Timeline
+     */
+    function renderTimelineSection(data) {
+      const stepsHtml = data.timeline.map((step, idx) => {
+        const isLast = idx === data.timeline.length - 1;
+        return `
+          <div class="relative flex gap-3.5 ${isLast ? '' : 'pb-5'}">
+            ${!isLast ? `<div class="absolute left-[11px] top-6 bottom-0 w-[1.5px] bg-hairline"></div>` : ''}
+            <div class="relative z-10 mt-1 w-6 h-6 rounded-full bg-rosebeigeSoft border border-rosebeige flex items-center justify-center shrink-0">
+              <span class="w-2 h-2 rounded-full bg-rosebeigeDark"></span>
+            </div>
+            <div class="flex-1 bg-white rounded-2xl p-4 border border-hairline shadow-card">
+              <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+                <span class="text-[11.5px] font-semibold text-rosebeigeDark">
+                  ${step.period}
+                </span>
+                <span class="text-[11px] text-taupe bg-ivory px-2 py-0.5 rounded-full border border-hairline">
+                  ${step.stage}
+                </span>
+              </div>
+              <p class="text-[13px] leading-[1.65] text-charcoal/90 mt-1.5">
+                ${step.desc}
+              </p>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <section aria-labelledby="heading-timeline" class="space-y-4">
+          <div>
+            <span class="text-[11px] font-semibold tracking-[0.14em] uppercase text-rosebeigeDark">
+              RECOVERY TIMELINE
+            </span>
+            <h3 id="heading-timeline" class="text-[18px] font-semibold text-charcoal mt-0.5 tracking-tight">
+              회복 과정 안내
+            </h3>
+            <p class="text-[12.5px] text-taupe mt-1">
+              시간에 따른 피부 변화 과정을 미리 확인해 보세요.
+            </p>
+          </div>
+          <div class="pt-1">
+            ${stepsHtml}
+          </div>
+        </section>
+      `;
+    }
+
+    /**
+     * Render Section 4: FAQ Accordion
+     */
+    function renderFaqSection(data) {
+      const faqHtml = data.faq.map(item => `
+        <div class="accordion-item bg-white rounded-2xl border border-hairline shadow-card overflow-hidden" data-open="false">
+          <button
+            type="button"
+            aria-expanded="false"
+            class="accordion-trigger w-full text-left px-[18px] py-4 flex items-center justify-between gap-3 hover:bg-ivory/50 transition-colors"
+          >
+            <span class="flex items-start gap-2.5 text-[13.5px] font-semibold text-charcoal leading-snug">
+              <span class="text-rosebeigeDark font-serif text-[15px] leading-none mt-0.5">Q.</span>
+              <span>${item.q}</span>
+            </span>
+            <svg class="accordion-chevron w-4 h-4 text-taupe shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <div class="px-[18px] pb-4 pt-1.5 border-t border-hairline/60 text-[13px] leading-[1.7] text-taupe">
+                ${item.a}
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      return `
+        <section aria-labelledby="heading-faq" class="space-y-4">
+          <div>
+            <span class="text-[11px] font-semibold tracking-[0.14em] uppercase text-rosebeigeDark">
+              FAQ
+            </span>
+            <h3 id="heading-faq" class="text-[18px] font-semibold text-charcoal mt-0.5 tracking-tight">
+              자주 묻는 질문
+            </h3>
+          </div>
+          <div class="space-y-2.5">
+            ${faqHtml}
+          </div>
+        </section>
+      `;
+    }
+
+    /**
+     * Master Render Function
+     */
+    function renderContent() {
+      const root = document.getElementById('content-root');
+      if (!root) return;
+
+      const data = CARE_DATA[state.activeCategory];
+      if (!data) return;
+
+      let html = `
+        <div class="p-4 rounded-2xl bg-white border border-hairline/90 shadow-card animate-fade-in">
+          <p class="text-[11px] font-semibold text-rosebeigeDark tracking-wide mb-1">
+            ${data.label}
+          </p>
+          <p class="text-[13px] leading-[1.65] text-charcoal/85">
+            ${data.intro}
+          </p>
+        </div>
+      `;
+
+      if (state.activeFilter === 'all' || state.activeFilter === 'pre') {
+        html += `<div class="animate-fade-in">${renderPreCareSection(data)}</div>`;
+      }
+
+      if (state.activeFilter === 'all' || state.activeFilter === 'post') {
+        html += `<div class="animate-fade-in">${renderPostCareSection(data)}</div>`;
+        html += `<div class="animate-fade-in">${renderTimelineSection(data)}</div>`;
+      }
+
+      html += `<div class="animate-fade-in">${renderFaqSection(data)}</div>`;
+
+      root.innerHTML = html;
+      attachDynamicListeners();
+    }
+
+    /**
+     * Update Active Tab & Filter UI
+     */
+    function updateNavUI() {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        const isActive = btn.dataset.category === state.activeCategory;
+        btn.setAttribute('aria-selected', String(isActive));
+        btn.className = isActive
+          ? 'tab-btn py-2.5 px-2 rounded-xl text-[13px] font-semibold transition-all duration-200 flex flex-col items-center justify-center leading-tight bg-white text-charcoal shadow-sm'
+          : 'tab-btn py-2.5 px-2 rounded-xl text-[13px] font-medium transition-all duration-200 flex flex-col items-center justify-center leading-tight text-taupe hover:text-charcoal';
+      });
+
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        const isActive = btn.dataset.filter === state.activeFilter;
+        btn.className = isActive
+          ? 'filter-btn px-3.5 py-1.5 rounded-full text-[12px] font-medium transition-colors bg-charcoal text-white'
+          : 'filter-btn px-3.5 py-1.5 rounded-full text-[12px] font-medium transition-colors bg-white text-taupe border border-hairline hover:border-rosebeige';
+      });
+    }
+
+    /**
+     * Bind Dynamic Event Listeners (Checklist & FAQ Accordion)
+     */
+    function attachDynamicListeners() {
+      document.querySelectorAll('.checklist-row').forEach(row => {
+        row.addEventListener('click', () => {
+          const id = row.dataset.checkId;
+          if (!id) return;
+          state.checkedItems[id] = !state.checkedItems[id];
+          saveChecks();
+
+          const scrollY = window.scrollY;
+          renderContent();
+          window.scrollTo(0, scrollY);
+
+          const preItems = CARE_DATA[state.activeCategory].preCare;
+          const allDone = preItems.every(i => !!state.checkedItems[i.id]);
+          if (state.checkedItems[id] && allDone) {
+            showToast('방문 전 체크리스트를 모두 완료하셨습니다');
+          }
+        });
+      });
+
+      document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const item = trigger.closest('.accordion-item');
+          if (!item) return;
+          const isOpen = item.getAttribute('data-open') === 'true';
+          item.setAttribute('data-open', String(!isOpen));
+          trigger.setAttribute('aria-expanded', String(!isOpen));
+        });
+      });
+    }
+
+    /**
+     * Initialize Page on DOM Ready
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        loadSavedChecks();
+        updateNavUI();
+        renderContent();
+
+        // Category Tab Switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const nextCat = btn.dataset.category;
+            if (!nextCat || nextCat === state.activeCategory) return;
+            state.activeCategory = nextCat;
+            updateNavUI();
+            renderContent();
+
+            const nav = document.querySelector('nav');
+            if (nav && window.scrollY > nav.offsetTop) {
+              window.scrollTo({ top: nav.offsetTop - 4, behavior: 'smooth' });
+            }
+          });
+        });
+
+        // Sub-Filter Pill Switching
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const nextFilter = btn.dataset.filter;
+            if (!nextFilter || nextFilter === state.activeFilter) return;
+            state.activeFilter = nextFilter;
+            updateNavUI();
+            renderContent();
+          });
+        });
+
+        // Header Share & Floating Dock Copy/Share Buttons
+        const btnHeaderShare = document.getElementById('btn-header-share');
+        const btnDockCopy = document.getElementById('btn-dock-copy');
+        const btnDockHome = document.getElementById('btn-dock-home');
+
+        if (btnHeaderShare) btnHeaderShare.addEventListener('click', handleShareOrCopyLink);
+        if (btnDockCopy) btnDockCopy.addEventListener('click', handleShareOrCopyLink);
+        if (btnDockHome) {
+          btnDockHome.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+
+        // Footer Buttons
+        const btnCopyIg = document.getElementById('btn-copy-instagram');
+        const btnKakao = document.getElementById('btn-kakao-inquiry');
+        const btnHomeGuide = document.getElementById('btn-home-guide');
+
+        if (btnCopyIg) {
+          btnCopyIg.addEventListener('click', () => {
+            copyTextToClipboard('@bakie_tattoo', '인스타그램 아이디(@bakie_tattoo)가 복사되었습니다');
+          });
+        }
+        if (btnKakao) {
+          btnKakao.addEventListener('click', () => openModal('kakao-modal'));
+        }
+        if (btnHomeGuide) {
+          btnHomeGuide.addEventListener('click', () => openModal('home-guide-modal'));
+        }
+
+        // Modal Close Triggers (Buttons & Backdrop)
+        document.querySelectorAll('[data-close-modal]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            closeModal(btn.getAttribute('data-close-modal'));
+          });
+        });
+
+        ['home-guide-modal', 'kakao-modal'].forEach(modalId => {
+          const modalEl = document.getElementById(modalId);
+          if (modalEl) {
+            modalEl.addEventListener('click', (e) => {
+              if (e.target === modalEl) closeModal(modalId);
+            });
+          }
+        });
+      } catch (err) {
+        console.error('SWEET INK Guide initialization error:', err);
+      }
+    });
+  </script>
+</body>
+</html>
